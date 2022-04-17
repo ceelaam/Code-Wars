@@ -1,0 +1,16 @@
+when you make some bundle of changes, that solve a problem or are logically coherent you will make a commit
+first you will open the console(ctrl shift `) and then
+
+git add .
+
+this will "stage" the changes and you can do this any number of times
+
+when everything is staged you will type
+
+git commit -m "this describes the changes in this commit"
+
+then
+
+git push
+
+that will push the changes to the repository
