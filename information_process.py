@@ -15,3 +15,8 @@ def solve(arr):
     return [compare_index(word) for word in arr] if arr else None
 
 #-------------------------------------------------------------------------
+#find position of vowels in a word
+
+def vowel_indices(word):
+    vowels = "aeiouyAEIOUY" 
+    return [index for index in range(1,(len(word)+1)) if word[index-1] in vowels]
