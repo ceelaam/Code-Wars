@@ -37,5 +37,17 @@ def is_odd_heavy(arr):
         return False
     
     return True
-
+#--------------------------------------------------------------------------------------------
+#function that informs if character in a string appears more than once in a string. Returns a encoded message consist if "(" == appears once, ")" == appears twice
+def duplicate_encode(word):
+    lower = word.lower()
+    new_set = set(lower)
+    dubble = [i for i in new_set if lower.count(i) >1]
+    encoder = ""
+    for char in lower:
+        if char in dubble:
+            encoder += ")"
+        else:
+            encoder += "("
+    return encoder
 #---------------------------------------------------------------------------------------------
