@@ -51,3 +51,19 @@ def duplicate_encode(word):
             encoder += "("
     return encoder
 #---------------------------------------------------------------------------------------------
+#function checks if given value is an valid IP address
+def is_valid_IP(strng):
+    if strng.count(".") ==3:
+        num_list = strng.split(".")
+        for num in num_list:
+            if num.isnumeric():
+                if int(num) > 255:
+                    return False
+                elif len(num) >1 and num[0] == "0":
+                    return False
+            else:
+                return False
+    else:
+        return False
+    return True
+
